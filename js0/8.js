@@ -9,7 +9,7 @@
 
 const solution = (num1, num2) => {
   return () => {
-    return sum = num1 + num2
+    return num1 + num2
   }
 }
 
