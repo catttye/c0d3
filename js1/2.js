@@ -11,8 +11,14 @@
  * @returns {function}
  */
 
-const solution = (num, fun) => {
-  return () => { }
+const solution = (num, fun, count = 0) => {
+  return () => { 
+    if (count >= num) {
+      return null
+    }
+    count++;
+    return fun();
+  }
 }
 
 module.exports = {
